@@ -4,7 +4,7 @@
 
 Using Dijkstra's algorithm, find the shortest path from A to all other vertices in this fully connected directed and weighted graph.
 
-[Imgur](https://i.imgur.com/07A2amK.png)
+![Imgur](https://i.imgur.com/07A2amK.png)
 
 During this procedure, how many times is edge relaxation done towards vertex E? In other words, on how many occasions do we compare the current distance from A to E with a new calculated distance from A to E?
 
