@@ -21,15 +21,15 @@ Then, run the following command to set up your environment:
 $ ./setup.sh
 ```
 
-This will attempt to install the Autotest library in /usr/local/bin/autotest.
+This will attempt to install the [Autotest source code](https://github.com/COMP1511UNSW/autotest) in /usr/local/bin/autotest.
 
-It will also create a symlink at /usr/local/bin/autotest.sh to the autotest.sh script so you can run it from anywhere. Make sure you have `/usr/local/bin` in your `PATH`.
+It will also create a symlink at `/usr/local/bin/autotest.sh` to the `autotest.sh` in this repo script so you can run it from anywhere. **Make sure you have `/usr/local/bin` in your `PATH`.**
 
 ## Problem Writing
 
-To write a problem, go into the `./problems` directory and copy-paste an existing problem folder.
+To write a problem, go into the `./problems` directory, copy-paste the `problem_template` folder and rename it. 
 
-TODO: Write documentation for testing problems with autotest.
+- Rename your solution_file.c in problem_template/solution to a suitable name. Implement your solution in this file. It will be used by `autotest --generate_expected_output` to generate expected outputs to your test inputs.It won't be available to students.
 
 To run autotest on your problem, go into the directory containing your solution file and run:
 
@@ -37,4 +37,9 @@ To run autotest on your problem, go into the directory containing your solution 
 $ autotest.sh <dirname_containing_autotest>
 ```
 
-where `<dirname_containing_autotest>` is the name of the directory containing the `autotest` folder for your problem.
+where `<dirname_containing_autotest>` is the name of the directory containing the `autotest` folder for your problem. For example, if your solution file is in `./problems/problem_template/solution/solution_file.c`, then you would run:
+
+```bash
+$ cd problems/problem_template/solution_file.c
+$ autotest.sh problem_template
+```
