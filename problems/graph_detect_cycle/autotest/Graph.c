@@ -78,8 +78,14 @@ Graph buildGraph(void) {
     }
 
     int u, v;
+#ifdef DIRECTED
     while (scanf("%d -> %d", &u, &v) == 2)
         insertEdge(g, u, v);
+#endif
+#ifndef DIRECTED
+    while (scanf("%d <-> %d", &u, &v) == 2)
+        insertEdge(g, u, v);
+#endif
 
     return g;
 }
