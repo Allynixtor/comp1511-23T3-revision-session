@@ -34,8 +34,8 @@ int sumCoins(int price, int coins_count, int *coins) {
             int k = 2;            
             while (k < coins_count) {
                 if (coins[i] + coins[j] + coins[k] == price && i != j && j != k && k != i) {
-                    printf("%d %d %d", i, j, k);
-                    printf("%d %d %d", coins[i], coins[j], coins[k]);
+                    // printf("%d %d %d", i, j, k);
+                    // printf("%d %d %d", coins[i], coins[j], coins[k]);
                     return 1;
                 }
                 k++;

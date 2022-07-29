@@ -46,7 +46,7 @@ int main()
 
     int result = sumCoins(p, n, coins_array);
 
-    fprintf(fptr, "%d\n", result);
+    printf("%d\n", result);
 
     fclose(fptr);
 
