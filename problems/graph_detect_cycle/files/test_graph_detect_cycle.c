@@ -1,3 +1,22 @@
+/**
+ * Build an undirected unweighted graph with at least one edge
+ * from stdin.
+ * First line: n the number of vertices in your graph
+ * Following lines: each line contains the two vertices connected
+ * by an edge. Vertices are numbered 0 to n-1 inclusive.
+ *
+ * Usage:
+    $ dcc test_graph_detect_cycle.c graph_detect_cycle.c Graph.c -o test_graph_detect_cycle
+    $ ./test_graph_detect_cycle
+    3
+    0 <-> 1
+    1 <-> 2
+    
+ * Ctrl + D to end input.
+ * 
+ * Note: You do not have to modify this file to complete
+ * this exercise.
+ */ 
 
 #include <stdbool.h>
 #include <stdio.h>
@@ -5,23 +24,10 @@
 
 #include "Graph.h"
 
+
 bool graphDetectCycle(Graph g);
 
 int main(void) {
-    /**
-     * Build an undirected unweighted graph with at least one edge.
-     * First line: n the number of vertices in your graph
-     * Following lines: each line contains the two vertices connected by an edge. Vertices are numbered 0 to n-1 inclusive.
-     * E.g.
-        $ dcc test_graph_detect_cycle.c graph_detect_cycle.c Graph.c -o test_graph_detect_cycle
-        $ ./test_graph_detect_cycle
-        3
-        0 <-> 1
-        1 <-> 2
-        
-     * Ctrl + D to end input.
-     * 
-     */ 
 
 
     Graph g = buildGraph();
