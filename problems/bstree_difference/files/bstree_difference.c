@@ -2,7 +2,6 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
 #include "bstree.h"
 
@@ -15,15 +14,15 @@
  * The testing code reads the preorder traversal of the BST from stdin.
  *
  * For example, if the preorder traversal is 11 7 4 20 18 23 30, the BST is
- *		 11
- *		/  \
- *	   /    \
- *	  7    20
- *	 /    /  \
- *	4    /    \
- *		18    23
- *			   \
- *			   30
+ *      11
+ *     /  \
+ *    /    \
+ *   7     20
+ *  /     /  \
+ * 4     /    \
+ *      18    23
+ *              \
+ *              30
  * and the answer is 20 - 18 = 2.
  *
  * Any efficient solution, such as one that runs in O(n) or O(n log n), should
