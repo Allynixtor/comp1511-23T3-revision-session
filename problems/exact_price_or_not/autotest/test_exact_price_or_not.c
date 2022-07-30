@@ -30,8 +30,6 @@ int sumCoins(int price, int coins_count, int *coins);
 
 int main()
 {
-    FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
-
     int p = parse_int(ltrim(rtrim(readline())));
 
     int n = parse_int(ltrim(rtrim(readline())));
@@ -47,8 +45,6 @@ int main()
     int result = sumCoins(p, n, coins_array);
 
     printf("%d\n", result);
-
-    fclose(fptr);
 
     return 0;
 }
