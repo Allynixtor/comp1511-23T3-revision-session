@@ -25,13 +25,10 @@ command=./test_problem_template
 ## ================================
 
 ## Below will be the expected output corresponding to each of your
-## test cases. You don't need to write them; they will be generated
+## test cases. You can manually write them, or generate them
 ## using `autotest --generate_expected_output` using your
 ## `problem_template/solution/solution_file.c
 ## See https://github.com/COMP1511UNSW/autotest
-
-## But in case you're curious, here's what it might look like:
-
 
 
 
