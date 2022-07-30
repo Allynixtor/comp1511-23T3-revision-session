@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "other_files.h"
+#include "exact_price_or_not.h"
 
 // Declare any helper functions you need here.
 // ...

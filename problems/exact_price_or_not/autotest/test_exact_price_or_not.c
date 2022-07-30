@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "other_files.h"
+#include "exact_price_or_not.h"
 
 char* readline();
 char* ltrim(char*);
@@ -25,8 +25,6 @@ int parse_int(char*);
  *  1. INTEGER price
  *  2. INTEGER_ARRAY coins
  */
-
-int sumCoins(int price, int coins_count, int *coins);
 
 int main()
 {
@@ -74,7 +72,7 @@ char* readline() {
         data = realloc(data, alloc_length);
 
         if (!data) {
-            data = '\0';
+            data = "\0";
 
             break;
         }
@@ -86,13 +84,13 @@ char* readline() {
         data = realloc(data, data_length);
 
         if (!data) {
-            data = '\0';
+            data = "\0";
         }
     } else {
         data = realloc(data, data_length + 1);
 
         if (!data) {
-            data = '\0';
+            data = "\0";
         } else {
             data[data_length] = '\0';
         }
@@ -103,7 +101,7 @@ char* readline() {
 
 char* ltrim(char* str) {
     if (!str) {
-        return '\0';
+        return "\0";
     }
 
     if (!*str) {
@@ -119,7 +117,7 @@ char* ltrim(char* str) {
 
 char* rtrim(char* str) {
     if (!str) {
-        return '\0';
+        return "\0";
     }
 
     if (!*str) {
