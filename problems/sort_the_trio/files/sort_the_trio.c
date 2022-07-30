@@ -12,7 +12,7 @@ void swap(int *array, int i, int j)
     array[j] = temp;
 }
  
-//Sorts the array of ints
+// Sorts the array of integers in-place
 void sort(int *array, int high) {
 
     // TODO: Implement this function
