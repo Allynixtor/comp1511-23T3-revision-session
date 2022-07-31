@@ -44,8 +44,9 @@ problem_template
 │   ├── other_files.h
 │   ├── problem_template.c
 │   └── test_problem_template.c
-└── solution
-    └── problem_template.c
+├── solution
+│   └── problem_template.c
+└── main.md
 ```
 
 The `autotest` directory contains the files that will be used to run autotest. It contains:
@@ -62,6 +63,8 @@ The `files` directory is the directory that will be made available to students t
 - `files/problem_template.c`: A template file for students to put their code in to solve the problem. You do not need to modify this file, but make sure you call the function inside this file in your `test_problem_template.c` file.
 
 The `solution` directory contains a single file `problem_template.c` which looks like the `files/problem_template.c` file, but has a working solution to your problem. It is not made available to students. It is used by autotest to generate expected outputs from your test cases which will be used to test students' solutions. Code up your solution to your problem in this file.
+
+The `main.md` file explains your problem to students attempting to solve it, input input format, output format, samples, how to run the program, and solution.
 
 ## Writing Test Cases
 
