@@ -7,7 +7,7 @@ Implement the function `graphDetectCycle` in `graph_detect_cycle.c`. This functi
 To run your solution:
 
 ```bash
-$ dcc test_graph_detect_cycle.c graph_detect_cycle.c Graph.c -o test_graph_detect_cycle
+$ make
 $ ./test_graph_detect_cycle
 ```
 

@@ -7,7 +7,7 @@ Implement the function `kthlargest` in `bstree_kth_largest.c`. This function wil
 To run your solution:
 
 ```bash
-$ dcc test_bstree_kth_largest.c bstree_kth_largest.c bstree.c -o test_bstree_kth_largest
+$ make
 $ ./test_bst_kth_largest
 ```
 

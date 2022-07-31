@@ -6,9 +6,15 @@
 
 #include "bstree.h"
 
-bstree insert_into_bst(bstree t, int item) {
+static bstree insert_into_bst(bstree t, int item);
+void print_bst(bstree t);
+bstree bstree_create(int num_elems);
+void bstree_free(bstree t);
+
+
+static bstree insert_into_bst(bstree t, int item) {
     if (t == NULL) {
-        bstree nt = malloc(sizeof(bstree));
+        bstree nt = malloc(sizeof(*nt));
         nt->value = item;
         nt->left = NULL;
         nt->right = NULL;

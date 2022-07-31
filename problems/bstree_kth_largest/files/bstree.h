@@ -9,12 +9,14 @@
 typedef struct _bstree *bstree;
 struct _bstree{
 	int value;
-	struct _bstree *left;
-	struct _bstree *right;
+	bstree left;
+	bstree right;
 };
 
 bstree bstree_create(int num_elems);
 void print_bst(bstree t);
 void bstree_free(bstree t);
+
+int kthlargest(bstree t, int k);
 
 #endif

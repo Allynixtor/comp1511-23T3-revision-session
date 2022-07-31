@@ -5,8 +5,6 @@
 
 #include "bstree.h"
 
-int kthlargest(bstree t, int k);
-
 int main(void) {
     int i;
     scanf("%d", &i);
