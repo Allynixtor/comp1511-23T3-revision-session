@@ -94,9 +94,9 @@ Explanation: 3 is the largest element in the tree.
 When you think your program is working, you can use CSE autotest to test your solution.
 
 ```bash 
-$ 2521 autotest graph_detect_cycle
+$ 2521 autotest bstree_kth_largest
 ```
 
 ## Solution
 
-You can view the solution code to this problem [here](https://github.com/dqna64/comp2521-revision-session/blob/main/problems/graph_detect_cycle/solution/graph_detect_cycle.c).
+You can view the solution code to this problem [here](https://github.com/dqna64/comp2521-revision-session/blob/main/problems/bstree_kth_largest/solution/bstree_kth_largest.c).
