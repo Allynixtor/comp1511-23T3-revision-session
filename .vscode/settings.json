@@ -1,0 +1,7 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "other_files.h": "c",
+        "exact_price_or_not.h": "c"
+    }
+}

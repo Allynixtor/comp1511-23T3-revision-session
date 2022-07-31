@@ -1,0 +1,102 @@
+# Kth Largest in a BST
+
+Given a BST and a number `k`, find the `k`th largest element in the BST.
+
+Implement the function `kthlargest` in `bstree_kth_largest.c`. This function will then be called by the `main` function in `test_bstree_kth_largest.c`.
+
+To run your solution:
+
+```bash
+$ dcc test_bstree_kth_largest.c bstree_kth_largest.c bstree.c -o test_bstree_kth_largest
+$ ./test_bst_kth_largest
+```
+
+## Input format
+
+The program will read from stdin.
+
+The first line will be an integer desribing how many elements will be in the following tree.
+
+Next should be a space separated list of integer values, representing the preorder traversal of the BST.
+
+The next line will be an integer defining the number `k`.
+
+## Output format
+
+The program will write to stdout.
+
+It will print integer which will be the `k`th largest element, followed by a newline.
+
+## Sample 1
+
+Input:
+
+```bash
+7
+11 7 4 20 18 23 30
+5
+```
+
+Output:
+
+```bash
+11
+```
+
+Explanation: The 5th largest element is 11.
+
+## Sample 2
+
+Input:
+
+```bash
+7
+4 2 6 1 3 5 7
+5
+```
+
+Output:
+
+```bash
+3
+```
+
+Explanation: The 4th largest element is 4.
+
+## Sample 3
+
+Input:
+
+```bash
+3
+1 2 3
+1
+```
+
+Output:
+
+```bash
+3
+```
+
+Explanation: 3 is the largest element in the tree.
+
+## Assumptions
+
+- There will be at least `k` element in the tree.
+- Each element in the tree will be an integer.
+- Each node in the tree will contain an integer, possibly a left value and possibly a right value.
+- The input list contains at least one and at most `MAX_BST_SIZE` values.
+- The integers in the input list will always be positive and greater than 0;
+
+## CSE Autotest
+
+When you think your program is working, you can use CSE autotest to test your solution.
+
+```bash 
+$ 2521 autotest graph_detect_cycle
+```
+
+## Solution
+
+You can view the solution code to this problem [here](https://github.com/dqna64/comp2521-revision-session/blob/main/problems/graph_detect_cycle/solution/graph_detect_cycle.c).
