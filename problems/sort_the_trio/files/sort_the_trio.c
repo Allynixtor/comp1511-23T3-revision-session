@@ -13,11 +13,8 @@ void swap(int *array, int i, int j)
 }
  
 // Sorts the array of integers in-place
-void sort(int *array, int high) {
+void sort(int *array, int size) {
 
     // TODO: Implement this function
-
- 
-
 }
 

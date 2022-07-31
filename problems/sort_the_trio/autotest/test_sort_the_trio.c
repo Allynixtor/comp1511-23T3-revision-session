@@ -4,12 +4,12 @@
 
 #include "Sort.h"
 
-void sort(int *array, int high);
+void sort(int *array, int size);
 
 
 //DO NOT MODIFY !!
-//main() creates an array of ints from stdin, then passes the array along 
-//with its last index to the function sort(). 
+//main() creates an array of ints from stdin, then passes the array along
+//with its last index to the function sort().
 int main() {
 
     //Create array
@@ -19,10 +19,10 @@ int main() {
     int count = 0;
     int value;
 
-    //Read stdin to array. 
-    //Ctrl + D to end input. 
+    //Read stdin to array.
+    //Ctrl + D to end input.
     while (scanf("%d", &value) == 1) {
-        //If number of ints > size of array, resize array 
+        //If number of ints > size of array, resize array
         if (count == size_array) {
             array = realloc(array, (size_array + 1) *sizeof(int));
             size_array++;
@@ -32,7 +32,7 @@ int main() {
         count++;
     }
 
-    //Check for valid input 
+    //Check for valid input
 
     if (count == 0) {
         printf("error: No input detected\n");
@@ -41,10 +41,10 @@ int main() {
 
     //Sort array
 
-    sort(array, count - 1);
+    sort(array, count);
 
-    //Print elements in array 
- 
+    //Print elements in array
+
     for (int i = 0; i < count; i++) {
         printf("%d ", array[i]);
     }
