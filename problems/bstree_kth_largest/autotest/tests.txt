@@ -49,5 +49,5 @@ command=./test_problem_template
 4 expected_output='1\n'
 5 expected_output='3\n'
 6 expected_output='9\n'
-7 expected_output='3n'
+7 expected_output='3\n'
 8 expected_output='10\n'
