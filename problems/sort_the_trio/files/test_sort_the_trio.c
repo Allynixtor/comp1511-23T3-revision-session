@@ -4,7 +4,7 @@
 
 #include "Sort.h"
 
-void sort(int *array, int high);
+void sort(int *array, int size);
 
 
 //DO NOT MODIFY !!
@@ -41,7 +41,7 @@ int main() {
 
     //Sort array
 
-    sort(array, count - 1);
+    sort(array, count);
 
     //Print elements in array 
  

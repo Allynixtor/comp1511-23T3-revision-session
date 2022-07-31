@@ -10,18 +10,18 @@ void swap(int *array, int i, int j)
     array[i] = array[j];
     array[j] = temp;
 }
- 
+
 /**
  * Sorts the array of ints
- * 
- * Input: 
+ *
+ * Input:
  *   - int *array: An array of ints
- *   - int high: Last index of array
+ *   - int size: Number of elements in the array
  * Output:
  *   - void
  */
 
-void sort(int *array, int high) {
+void sort(int *array, int size) {
 
     //3 cursors - low, curr, high
     //low: First index of unsorted partition
@@ -30,6 +30,7 @@ void sort(int *array, int high) {
 
     int low = 0;
     int curr = 0;
+    int high = size - 1;
 
     //Sort until curr cursor passes high cursor, as anything to right of
     //high cursor is guarenteed to be sorted from previous sorts
@@ -37,7 +38,7 @@ void sort(int *array, int high) {
     while (curr <= high) {
 
         //Case1: current element is 0
-        if (array[curr] == 0)         
+        if (array[curr] == 0)
         {
             swap(array, low, curr);
             low++;
@@ -50,7 +51,7 @@ void sort(int *array, int high) {
             high--;
         }
         //Case3: current element is 1
-        else {                   
+        else {
             curr++;
         }
     }

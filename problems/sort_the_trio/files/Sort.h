@@ -7,7 +7,7 @@
 void swap (int *array, int i, int j);
 
 //Sorts the array of ints
-void sort(int *array, int high);
+void sort(int *array, int size);
 
 #endif
 
