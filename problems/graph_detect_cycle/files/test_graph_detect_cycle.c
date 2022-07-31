@@ -24,9 +24,6 @@
 
 #include "Graph.h"
 
-
-bool graphDetectCycle(Graph g);
-
 int main(void) {
 
 

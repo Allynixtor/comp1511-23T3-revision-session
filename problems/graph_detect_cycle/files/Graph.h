@@ -21,5 +21,7 @@ void  freeGraph(Graph g);
 int   numVertices(Graph g);
 bool  adjacent(Graph g, Vertex u, Vertex v);
 
+bool graphDetectCycle(Graph g);
+
 #endif
 

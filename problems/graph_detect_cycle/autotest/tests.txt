@@ -8,6 +8,12 @@ compiler_args=-Wall -Werror -g test_graph_detect_cycle.c graph_detect_cycle.c Gr
 
 command=./test_graph_detect_cycle
 
+show_actual_output = True
+show_expected_output = True
+show_diff = True
+show_reproduce_command = True
+show_stdin = True
+
 ## =================================
 ## ====== Add test cases here ======
 ## =================================

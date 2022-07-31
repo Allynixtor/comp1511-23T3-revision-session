@@ -25,32 +25,26 @@ bool graphDetectCycle(Graph g) {
     int toVisitStack[4*MAX_NUM_VERTICES] = {};
     toVisitStack[0] = 0;
     int stackTop = 1;
-    // while stack is not empty:
+    
     while (!hasCycle && stackTop > 0) {
         int node = toVisitStack[--stackTop];
-        // printf("\nVisiting node %d\n", node);
         if (!visited[node]) {
-            // mark node as visited
             visited[node] = true;
-            // for each neighbour of node:
             for (int otherNode = 0; otherNode < numVertices(g); otherNode++) {
                 if (otherNode == node || !adjacent(g, node, otherNode)) {
                     continue;
                 }
-
                 // printf("Checking %d's neighbour %d\n", node, otherNode);
                 if (!visited[otherNode]) {
                     if (stackHasNode(toVisitStack, stackTop, otherNode)) {
                         // If we plan to visit a node that we already planned
                         // to visit from a different node, we have a cycle.
-                        // printf("Planning to visit %d which we already planned to visit from a different node. Has cycle.\n", otherNode);
                         hasCycle = true;
                         break;
                     } else {
                         // Neighbour has not been visited yet and there is
                         // presently no plan to visit it - make a plan
                         // to visit it.
-                        // printf("Plan to visit %d\n", otherNode);
                         toVisitStack[stackTop++] = otherNode;
 
                     }

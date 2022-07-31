@@ -8,6 +8,12 @@ compiler_args=-Wall -Werror -g test_bstree_kth_largest.c bstree_kth_largest.c bs
 
 command=./test_bstree_kth_largest
 
+show_actual_output = True
+show_expected_output = True
+show_diff = True
+show_reproduce_command = True
+show_stdin = True
+
 ## =================================
 ## ====== Add test cases here ======
 ## =================================

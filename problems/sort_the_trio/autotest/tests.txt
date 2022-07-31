@@ -8,6 +8,12 @@ compiler_args=-Wall -Werror -g test_sort_the_trio.c sort_the_trio.c -o test_sort
 
 command=./test_sort_the_trio
 
+show_actual_output = True
+show_expected_output = True
+show_diff = True
+show_reproduce_command = True
+show_stdin = True
+
 ## =================================
 ## ====== Add test cases here ======
 ## =================================

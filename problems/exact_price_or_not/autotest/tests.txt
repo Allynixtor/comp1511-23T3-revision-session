@@ -8,6 +8,12 @@ compiler_args=-Wall -Werror -g test_exact_price_or_not.c exact_price_or_not.c -o
 
 command=./test_exact_price_or_not
 
+show_actual_output = True
+show_expected_output = True
+show_diff = True
+show_reproduce_command = True
+show_stdin = True
+
 ## =================================
 ## ====== Add test cases here ======
 ## =================================

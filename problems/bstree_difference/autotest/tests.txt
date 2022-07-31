@@ -8,7 +8,7 @@ compiler_args=-O2 -Wall -Werror -g test_bstree_difference.c bstree_difference.c 
 
 command=./test_bstree_difference
 
-show_actual_output = False
+show_actual_output = True
 show_expected_output = False
 show_diff = False
 show_reproduce_command = False
