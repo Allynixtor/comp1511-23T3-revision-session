@@ -4,7 +4,9 @@ parameters="
 	default_compilers = {'c' : [['clang', '-Werror', '-std=gnu11', '-g', '-lm']]}
 	upload_url = https://example.com/autotest.cgi
 "
+target="$(readlink -f "$0")"
+targetDir="$(dirname "$target")"
 
-exec "/import/ravel/2/z5416829/csesoc_edu/comp2521-revision-session/autotest.sh" --exercise_directory "/import/ravel/2/z5416829/csesoc_edu/comp2521-revision-session/problems" --parameters "$parameters" "$@"
+exec "/usr/local/bin/autotest/autotest.py" --exercise_directory "${targetDir}/problems" --parameters "$parameters" "$@"
 
 
