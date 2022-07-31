@@ -44,7 +44,7 @@ void sort(int *array, int high) {
             curr++;
         }
         //Case2: current element is 2
-        else if (array[curr] == 2)    /
+        else if (array[curr] == 2)    
         {
             swap(array, curr, high);
             high--;

@@ -4,9 +4,9 @@ files=sort_the_trio.c
 
 compilers=[['gcc']]
 
-compiler_args=-Wall -Werror -g main.c sort_the_trio.c -o main
+compiler_args=-Wall -Werror -g main.c sort_the_trio.c -o sort_the_trio
 
-command=./main
+command=./sort_the_trio
 
 ## =================================
 ## ====== Add test cases here ======
