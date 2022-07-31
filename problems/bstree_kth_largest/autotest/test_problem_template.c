@@ -1,34 +1,17 @@
 
-#include <stdlib.h>
+#include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-#include "other_files.h"
+#include "bstree.h"
 
-bool functionTheyNeedToImplement(Graph g);
+int kthlargest(bstree *t, int k);
 
 int main(void) {
-    // Add anything you want to read in before reading in the graph here.
-    // ...
-
-    Graph g = buildGraph();
-
-    // Add anything you want to read in after reading in the graph here.
-    // ...
-
-    // Call the function they have to implement.
-    // If it returns something, capture that return value.
-    bool hasCycle = functionTheyNeedToImplement(g);
-
-    // Print the return value from the function if there is one.
-    // The stdout output of this program will be used by autotest.
-    if (hasCycle) {
-		printf("Has cycle\n");
-	} else {
-		printf("Does not have cycle\n");
-	}
-
-    // Do any cleanup needed here.
-    freeGraph(g);
-    
-    return EXIT_SUCCESS;
+    int i;
+    scanf("%d", &i);
+	bstree *t = bstree_create(i);
+    scanf("%d", &i);
+    printf("%d\n", kthlargest(t, i));
+	bstree_free(t);
 }
