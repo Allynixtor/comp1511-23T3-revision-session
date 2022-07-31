@@ -8,9 +8,9 @@
 // Declare any helper functions you need here.
 // ...
 
-bstree *kthlargest_helper(bstree *t, int *k) {
+bstree kthlargest_helper(bstree t, int *k) {
     if (t == NULL) return NULL;
-    bstree *r = kthlargest_helper(t->right, k);
+    bstree r = kthlargest_helper(t->right, k);
     if (r != NULL) return r;
 
     (*k)--;
@@ -29,7 +29,7 @@ bstree *kthlargest_helper(bstree *t, int *k) {
  * Output:
  *  The value of the kth largest element in t.
  */
-int kthlargest(bstree *t, int k) {
+int kthlargest(bstree t, int k) {
     return kthlargest_helper(t, &k)->value;
 }
 

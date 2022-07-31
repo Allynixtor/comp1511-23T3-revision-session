@@ -17,7 +17,7 @@
  * Output:
  *  The value of the kth largest element in t.
  */
-int kthlargest(bstree *t, int k) {
+int kthlargest(bstree t, int k) {
     return 2;
 }
 

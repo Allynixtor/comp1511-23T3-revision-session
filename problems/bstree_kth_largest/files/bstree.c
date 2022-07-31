@@ -6,9 +6,9 @@
 
 #include "bstree.h"
 
-bstree *insert_into_bst(bstree *t, int item) {
+bstree insert_into_bst(bstree t, int item) {
     if (t == NULL) {
-        bstree *nt = malloc(sizeof(bstree));
+        bstree nt = malloc(sizeof(bstree));
         nt->value = item;
         nt->left = NULL;
         nt->right = NULL;
@@ -20,7 +20,7 @@ bstree *insert_into_bst(bstree *t, int item) {
     }
 }
 
-void print_bst(bstree *t) {
+void print_bst(bstree t) {
     if (t != NULL) {
         print_bst(t->left);
         printf("%d ", t->value);
@@ -28,8 +28,8 @@ void print_bst(bstree *t) {
     }
 }
 
-bstree *bstree_create(int num_elems) {
-    bstree *t = NULL;
+bstree bstree_create(int num_elems) {
+    bstree t = NULL;
     for (int i = 0; i < num_elems; i++) {
         int item;
         scanf("%d", &item);
@@ -40,7 +40,7 @@ bstree *bstree_create(int num_elems) {
 }
 
 
-void bstree_free(bstree *t) {
+void bstree_free(bstree t) {
     if (t == NULL) return;
     bstree_free(t->right);
     bstree_free(t->left);
