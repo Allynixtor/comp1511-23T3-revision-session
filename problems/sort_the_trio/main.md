@@ -67,7 +67,7 @@ Explanation: Input must be in sorted ascending order
 
 ## NOTE
 
-- You do not have to read input from stdin, and pass it into an array. This has been done for you in `main.c`. 
+- You do not have to read input from stdin, and pass it into an array. This has been done for you in `test_sort_the_trio.c`. 
 - You are only required to implement the function `sort` in `sort_the_trio.c`, which is given an array of 0's, 1's, or 2's, read from stdin. 
 
 ## CSE Autotest
@@ -80,4 +80,4 @@ $ 2521 autotest sort_the_trio
 
 ## Solution
 
-You can view the solution code to this problem [here](https://github.com/dqna64/comp2521-revision-session/blob/main/problems/graph_detect_cycle/solution/graph_detect_cycle.c).
+You can view the solution code to this problem [here](https://github.com/dqna64/comp2521-revision-session/blob/main/problems/sort_the_trio/solution/sort_the_trio.c).
