@@ -57,7 +57,7 @@ void sort(int *array, int size) {
     }
 }
 
-#Explaination
+//Explaination
 
 /*
 Aim: We want all the 0's on LHS of the array, and all the 2's on the RHS
