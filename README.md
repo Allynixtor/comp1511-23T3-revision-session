@@ -1,4 +1,4 @@
-# comp2521-revision-session-questions
+# comp1511-revision-session-questions
 
 Practical programming problems for the 22T3 CSESoc COMP1511 revision session.
 
