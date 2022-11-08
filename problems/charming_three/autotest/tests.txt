@@ -4,7 +4,7 @@ files=charming_three.c
 
 compilers=[['gcc']]
 
-compiler_args=-Wall -Werror -g charming_three.c charming_three
+compiler_args=-Wall -Werror -g charming_three.c -o charming_three
 
 command=./charming_three
 

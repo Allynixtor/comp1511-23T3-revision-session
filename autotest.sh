@@ -7,6 +7,6 @@ parameters="
 target="$(readlink -f "$0")"
 targetDir="$(dirname "$target")"
 
-exec "/usr/local/bin/autotest/autotest.py" --exercise_directory "${targetDir}/problems" --parameters "$parameters" "$@"
+python3 "/usr/local/bin/autotest/autotest.py" --exercise_directory "${targetDir}/problems" --parameters "$parameters" "$@"
 
 
