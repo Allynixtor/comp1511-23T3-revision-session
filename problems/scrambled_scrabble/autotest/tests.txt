@@ -4,7 +4,7 @@ files=scrambled_scrabble.c
 
 compilers=[['gcc']]
 
-compiler_args=-Wall -Werror -g scrambled_scrabble.c scrambled_scrabble
+compiler_args=-Wall -Werror -g scrambled_scrabble.c -o scrambled_scrabble
 
 command=./scrambled_scrabble
 

@@ -4,7 +4,7 @@ files=marc_coin.c
 
 compilers=[['gcc']]
 
-compiler_args=-Wall -Werror -g marc_coin.c marc_coin
+compiler_args=-Wall -Werror -g marc_coin.c -o marc_coin
 
 command=./marc_coin
 
