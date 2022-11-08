@@ -4,7 +4,7 @@ files=billys_books.c
 
 compilers=[['gcc']]
 
-compiler_args=-Wall -Werror -g billys_books.c billys_books
+compiler_args=-Wall -Werror -g billys_books.c -o billys_books
 
 command=./billys_books
 
