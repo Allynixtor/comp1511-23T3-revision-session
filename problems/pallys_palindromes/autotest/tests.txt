@@ -4,7 +4,7 @@ files=pallysPalindromes.c
 
 compilers=[['gcc']]
 
-compiler_args=-Wall -Werror -g pallys_palindromes.c pallys_palindromes
+compiler_args=-Wall -Werror -g pallys_palindromes.c -o pallys_palindromes
 
 command=./pallys_palindromes
 
