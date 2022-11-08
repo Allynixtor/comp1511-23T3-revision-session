@@ -4,7 +4,7 @@ files=scissors_paper_rock.c
 
 compilers=[['gcc']]
 
-compiler_args=-Wall -Werror -g scissors_paper_rock.c scissors_paper_rock
+compiler_args=-Wall -Werror -g scissors_paper_rock.c -o scissors_paper_rock
 
 command=./scissors_paper_rock
 show_actual_output = True
