@@ -1,0 +1,24 @@
+max_cpu_seconds=3
+
+files=train_trauma.c
+
+compilers=[['gcc']]
+
+compiler_args=-Wall -Werror -g train_trauma.c -o train_trauma
+
+command=./train_trauma
+
+show_actual_output = True
+show_expected_output = True
+show_diff = True
+show_reproduce_command = True
+show_stdin = True
+
+## =================================
+## ====== Add test cases here ======
+## =================================
+## You can find more info about how to format test cases
+## at https://github.com/COMP1511UNSW/autotest
+
+1  stdin="3\ns foo\nt home\nfoo\nt foo\nunsw\n"
+2  stdin="3\ns foo\nt home\nfoo\nt foo\nhome\n"
