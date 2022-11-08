@@ -1,6 +1,6 @@
 max_cpu_seconds=3
 
-files=pallysPalindromes.c
+files=pallys_palindromes.c
 
 compilers=[['gcc']]
 

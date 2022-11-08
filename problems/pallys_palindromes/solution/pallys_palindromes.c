@@ -10,6 +10,10 @@ int main(void) {
 
     int len = strlen(str);
 
+    // Remove the newline character '\n'
+    str[len - 1] = '\0';
+    len--;
+
     int i = 0;
 
     // Keep comparing characters while their mirrored position is the same
