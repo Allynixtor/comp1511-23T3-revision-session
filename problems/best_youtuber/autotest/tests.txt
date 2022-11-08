@@ -1,0 +1,41 @@
+max_cpu_seconds=3
+
+files=anagram.c
+
+compilers=[['gcc']]
+
+compiler_args=-Wall -Werror -g anagram.c anagram
+
+command=./anagram
+
+show_actual_output = True
+show_expected_output = True
+show_diff = True
+show_reproduce_command = True
+show_stdin = True
+
+## =================================
+## ====== Add test cases here ======
+## =================================
+## You can find more info about how to format test cases
+## at https://github.com/COMP1511UNSW/autotest
+
+1  stdin=['input01.txt']
+2  stdin=['input02.txt']
+3  stdin=['input03.txt']
+4  stdin=['input04.txt']
+5  stdin=['input05.txt']
+6  stdin=['input06.txt']
+7  stdin=['input07.txt']
+8  stdin=['input08.txt']
+9  stdin=['input09.txt']
+10 stdin=['input10.txt']
+11 stdin=['input11.txt']
+12 stdin=['input12.txt']
+13 stdin=['input13.txt']
+14 stdin=['input14.txt']
+15 stdin=['input15.txt']
+16 stdin=['input16.txt']
+17 stdin=['input17.txt']
+18 stdin=['input18.txt']
+19 stdin=['input19.txt']
