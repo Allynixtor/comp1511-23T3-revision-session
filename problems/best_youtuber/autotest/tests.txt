@@ -1,12 +1,12 @@
 max_cpu_seconds=3
 
-files=anagram.c
+files=best_youtuber.c
 
 compilers=[['gcc']]
 
-compiler_args=-Wall -Werror -g anagram.c anagram
+compiler_args=-Wall -Werror -g best_youtuber.c -o best_youtuber
 
-command=./anagram
+command=./best_youtuber
 
 show_actual_output = True
 show_expected_output = True
