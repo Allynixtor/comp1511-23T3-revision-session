@@ -4,7 +4,7 @@ files=anagram.c
 
 compilers=[['gcc']]
 
-compiler_args=-Wall -Werror -g anagram.c anagram
+compiler_args=-Wall -Werror -g anagram.c -o anagram
 
 command=./anagram
 

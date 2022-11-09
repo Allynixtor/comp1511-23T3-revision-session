@@ -39,7 +39,7 @@ int main(void)
     moves_valid.p2 = check_move(player2);
     if (!(moves_valid.p1 && moves_valid.p2))
     {
-        printf("Moves invalid!");
+        printf("Moves invalid!\n");
         // Terminate with error.
         return 0;
     }
@@ -113,14 +113,14 @@ void print_winner(struct player player1, struct player player2)
 {
     if (player1.points > player2.points)
     {
-        printf("Player 1 won!");
+        printf("Player 1 won!\n");
     }
     else if (player2.points > player1.points)
     {
-        printf("Player 2 won!");
+        printf("Player 2 won!\n");
     }
     else
     {
-        printf("It's a draw!");
+        printf("It's a draw!\n");
     }
 }
