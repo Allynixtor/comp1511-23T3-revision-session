@@ -36,7 +36,7 @@ int main(void) {
     Node *name_end = unsw;
 
     int days;
-    scanf("%d\n", &days);
+    scanf("%d ", &days);
 
     int counter = 0;
     char command;
@@ -81,7 +81,6 @@ int main(void) {
 // 			if there is no matching station.
 struct Node *name_to_pointer(Node *head, char name[MAX_STRING_LEN]) {
     Node *current = head;
-    Node *result = NULL;
     while (current != NULL) {
         if (strcmp(current->name, name) == 0) {
             return current;
@@ -117,7 +116,7 @@ int can_reach_goal(Node *head, Node *goal) {
 // Arguments: the string to be pruned
 // Returns: nothing
 void prune_newline(char str[MAX_STRING_LEN]) {
-	if (str[strlen(str) - 1] == '\n') {
+	while (str[strlen(str) - 1] == '\n' || str[strlen(str) - 1] == '\r') {
        	str[strlen(str) - 1] = '\0';
     }
 }
