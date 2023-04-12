@@ -4,8 +4,9 @@
 
 ## Run this script from the directory containing this script.
 
-source "./config.sh"
-source "./cleanup.sh"
+## Altered these to work for Ubuntu
+.  ./config.sh
+. ./cleanup.sh
 
 if [ ! -e "$INSTALL_DIR" ]; then
     echo "Creating new directory $INSTALL_DIR."
