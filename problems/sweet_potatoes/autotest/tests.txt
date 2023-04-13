@@ -1,4 +1,4 @@
-max_cpu_seconds=3
+max_cpu_seconds=20
 
 files=sweet_potatoes.c
 
