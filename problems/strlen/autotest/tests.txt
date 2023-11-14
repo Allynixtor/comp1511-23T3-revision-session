@@ -1,0 +1,37 @@
+max_cpu_seconds=3
+
+files=strlen.c
+
+compilers=[['gcc']]
+
+compiler_args=-Wall -Werror -g strlen.c -o strlen
+
+show_actual_output = True
+show_expected_output = True
+show_diff = True
+show_reproduce_command = True
+show_stdin = True
+
+## =================================
+## ====== Add test cases here ======
+## =================================
+## You can find more info about how to format test cases
+## at https://github.com/COMP1511UNSW/autotest
+
+1 command=./strlen hi
+2 command=./strlen h
+3 command=./strlen hellothere
+4 command=./strlen hello_there
+5 command=./strlen thisisalongsentence
+
+## ================================
+## ======== End test cases ========
+## ================================
+
+## Below will be the expected output corresponding to each of your test cases.
+
+1 expected_stdout='2\n'
+2 expected_stdout='1\n'
+3 expected_stdout='10\n'
+4 expected_stdout='11\n'
+5 expected_stdout='19\n'
